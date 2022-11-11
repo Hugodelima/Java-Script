@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        Álcool ou Gasolina?
+    </h3>
+</body>
+</html>
+
+<script>
+    var precoDaGasolina=2.90;
+    var precoDoAlcool=2.40;
+
+    var km = prompt("Informe a distância percorrida até agora");
+
+    var caminhoComAlcool =  (precoDoAlcool/km);
+    var caminhoComAlcool = caminhoComAlcool.toFixed(9);
+
+    var consumoDeGasolina = (precoDaGasolina/km);
+    var consumoDeGasolina = consumoDeGasolina.toFixed(9);
+
+    document.write('<br>O preço do kilometro para gasolina por km= '+consumoDeGasolina);
+    document.write('<br>O preço do kilometro para alcool por km = '+caminhoComAlcool);
+
+    if (consumoDeGasolina>=caminhoComAlcool){
+        document.write('<br> O mais barato por km é o alcool=' + caminhoComAlcool);
+    
+    }else{
+        document.write('<br> O mais barato por km  é a gasolina='+consumoDeGasolina);
+        
+    }
+
+
+</script>
