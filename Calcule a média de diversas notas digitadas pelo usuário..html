@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    var nota1 = parseFloat(prompt("Informe sua nota 1 "));
+    var nota2 = parseFloat(prompt("Informe sua nota 2 "));
+    var nota3 = parseFloat(prompt("Informe sua nota 3 "));
+
+
+    var media=((nota1+nota2+nota3)/3);
+
+    if (media>=0 && media<4){
+        document.write('<br> Reprovado, sua média é ' + media);
+    }
+    if (media>=4 && media<7){
+        document.write('<br> Passado pro exame final, sua média é ' + media);
+    }
+    if(media>=7 && media<=10){
+        document.write('<br> Aprovado, sua média é ' + media);
+    }if (media>=11){
+        document.write("<br> Insira um valor entre 1 á 10")
+    }
+
+</script>
